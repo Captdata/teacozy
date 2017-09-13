@@ -9,22 +9,20 @@ header {
   align-items: center;
   background-color: black;
 }
-
 .logo {
   margin-left: 10px;
   flex-grow: 1;
   text-align: left;
-
 }
-
 .logo img {
   height: 50px;
 }
-
 header nav {
   display: inline-block;
 }
-
+header span {
+  padding-left: 20px;
+}
 header nav a {
   color: white;
 }
@@ -37,41 +35,102 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  margin: 0;
+  margin: 0px;
+}
+h2, h3, h4{
+  margin: 0px;
+  padding: 10px;
 }
 .main {
-  padding-top: 69px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
 }
 .top {
   background-image: url(../mission-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
+  width: 1200px;
   display: flex;
   align-items: center;
-  width: 1200px;
   padding: 0px;
 }
-
 .text {
   background-color: black;
-  width: 1200px;
+  width: 100%;
   margin: 0px;
 }
-.text h2,.text h4{
-  margin: 10px;
+.month {
+  width: 1000px;
 }
-.text h2{
-  margin-bottom: 20px;
+.item {
+  padding: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/*                 FOOTER            */
-footer .foot {
+.item img {
   height: 200px;
+  margin: 10px;
+  width: 300px;
+}
+.item span {
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.location-list {
+  background-image: url(../locations-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 70px;
+  width: 1200px;
+}
+.location-list h2 {
+  margin: 0px 0px 15px 0px;
+}
+.loc-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.location {
+  background-color: black;
+  flex-basis: 280px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+  padding: 10px;
 
+}
+.location-list h3 ,.location-list h2{
+  margin: 0;
+  padding: 10px;
+}
+
+.main, .location-list, .month {
+  padding-top: 70px;
+}
+.contact {
+  height: 200px;
+}
+/*                 FOOTER            */
+footer {
+  text-align: left;
 }
 footer span {
-  text-align: left;
 }
